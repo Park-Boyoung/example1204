@@ -2,8 +2,8 @@
 
 const express = require("express");
 
-const mainRouter = require("./routes");
-const userRouter = require("./routes/users");
+const indexRouter = require("./routes");
+const usersRouter = require("./routes/users");
 
 const app = express();
 
@@ -13,8 +13,8 @@ const PORT = 7000;
 app.set("view engine", "ejs");
 
 // router setting
-app.use("/", mainRouter);
-app.use("/users", userRouter);
+app.use("/", indexRouter);
+app.use("/users", usersRouter);
 
 app.listen(PORT, () => {
   console.log(`${PORT} 포트에서 서버 실행 중`);
