@@ -1,6 +1,6 @@
 // @ts-check
 
-const mongoClient = require("./mongoController");
+const mongoClient = require("./mongoConnect");
 
 const db = {
   getUsers: async () => {

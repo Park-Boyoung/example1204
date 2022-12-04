@@ -6,8 +6,8 @@ const db = require("../controllers/userController");
 
 const router = express.Router();
 
-// localhost:8000/users
-router.get("/", async (req, res) => {
+// localhost:7000/users
+router.get("/users", async (req, res) => {
   const users = await db.getUsers();
 
   console.log(users);
