@@ -13,18 +13,6 @@
   <a href="/user">
     <h2>user list</h2>
   </a>
-  <ul>
-    <% if (userCounts >0) { %>
-    <% for(let i =0; i < userCounts; i++) { %>
-    <li>
-      <p>name: <%= USER[i].name %></p>
-      <p>age: <%= USER[i].age %></p>
-    </li>
-    <% } %>
-    <% } else { %>
-    <li>회원 정보가 없습니다.</li>
-    <% } %>
-  </ul>
 </body>
 
 </html>
