@@ -2,7 +2,7 @@
 
 const express = require("express");
 
-const mainRouter = require("./routes/main");
+const mainRouter = require("./routes");
 const userRouter = require("./routes/users");
 
 const app = express();

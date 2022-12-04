@@ -3,15 +3,12 @@
 const mongoClient = require("./mongoConnect");
 
 const db = {
-  getUsers: async () => {
+  getAllUsers: async () => {
     const client = await mongoClient.connect();
-    const user = client.db("kdt4").collection("user");
+    const users = client.db("kdt4").collection("user");
 
-    const usersCursor = user.find({});
-    const users = await usersCursor.toArray();
-    if (!users) throw Error("회원정보 불러오기 오류");
-
-    return users;
+    const allUsers = await users.find({}).toArray();
+    return allUsers;
   },
 };
 

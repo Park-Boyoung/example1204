@@ -11,10 +11,12 @@
 <body>
   <a href="/">홈</a>
   <h1>회원목록</h1>
-  <% for(let i = 0; i < users.length; i++) {%>
-  <p>id : <%=users[i].id %></p>
-  <p>password : <%=users[i].password %></p>
-  <% } %>
+  <ul>
+    <% for(let i = 0; i < users.length; i++) {%>
+    <p>id : <%=USER[i].id %></p>
+    <p>password : <%=USER[i].password %></p>
+    <% } %>
+  </ul>
 </body>
 
 </html>
