@@ -13,10 +13,10 @@
   <h1>MEMBER</h1>
   <ul>
     <% if(MEMBERS.length !== 0) { %>
-    <% for (let i = 0; i < users.length; i++) { %>
+    <% for (let i = 0; i < MEMBERS.length; i++) { %>
     <ol>
-      <li>id : <%= MEMBER[i].id %></li>
-      <li>password : <%= MEMBER[i].password %></li>
+      <li>id : <%= MEMBERS[i].id %></li>
+      <li>password : <%= MEMBERS[i].password %></li>
     </ol>
 
     <% } %>

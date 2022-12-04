@@ -9,7 +9,7 @@ const db = require("./controllers/memberController");
 
 const app = express();
 
-const PORT = 7000;
+const PORT = 8000;
 
 // ejs setting
 app.set("view engine", "ejs");
